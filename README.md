@@ -92,13 +92,13 @@ The backend is built with Node.js, Express, TypeScript, and MongoDB.
    * **ArduinoJson** by Benoit Blanchon (v6.x)
 3. Set your Wi-Fi credentials:
    ```cpp
-   const char* ssid = "Hivemind";
-   const char* password = "P#821743056zj";
+   const char* ssid = "Your SSID";
+   const char* password = "Your Password";
    ```
-4. Change the backend API URLs to match your server's local network IP address (e.g., `192.168.1.148`):
+4. Change the backend API URLs to match your server's local network IP address (e.g., `192.168.100.148`):
    ```cpp
-   const char* api_stkpush = "http://192.168.1.148:5000/api/stkpush";
-   const char* api_status_base = "http://192.168.1.148:5000/api/stkpush/status/";
+   const char* api_stkpush = "http://192.168.100.148:5000/api/stkpush";
+   const char* api_status_base = "http://192.168.100.148:5000/api/stkpush/status/";
    ```
 5. Compile and upload to your ESP32 board!
 
@@ -106,7 +106,7 @@ The backend is built with Node.js, Express, TypeScript, and MongoDB.
 
 ## User Workflow
 1. **Idle State**: LCD displays `Enter Phone`.
-2. **Phone Number Entry**: Input the customer's phone number (e.g. `0717000480`) and press `#` to proceed.
+2. **Phone Number Entry**: Input the customer's phone number (e.g. `0717*****480`) and press `#` to proceed.
    * If you make a mistake, press `*` to clear and start over.
 3. **Amount Entry**: LCD displays `Amount:`. Key in the payment amount and press `#`.
 4. **Push Sent**: ESP32 hits `/api/stkpush`, triggers Safaricom, receives the checkout request ID, and changes the LCD to `Check Phone & Pay`.
