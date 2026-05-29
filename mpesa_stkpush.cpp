@@ -9,8 +9,8 @@
 // WIFI CONFIGURATION
 // =====================================
 
-const char* ssid = "Hivemind";
-const char* password = "P#821743056zj";
+const char* ssid = "Your_SSID";
+const char* password = "Your_Password";
 
 // =====================================
 // BACKEND CONFIGURATION
