@@ -9,7 +9,7 @@
 // WIFI CONFIGURATION
 // =====================================
 
-const char* ssid = "Hivemind";
+const char* ssid = "Hivemind..";
 const char* password = "P#821743056zj";
 
 // =====================================
