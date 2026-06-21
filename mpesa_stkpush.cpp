@@ -10,7 +10,7 @@
 // =====================================
 
 const char* ssid = "Hivemind";
-const char* password = "P#82174_3056zj";
+const char* password = "P#821743056zj";
 
 // =====================================
 // BACKEND CONFIGURATION
